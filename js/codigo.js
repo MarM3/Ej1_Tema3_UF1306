@@ -11,18 +11,19 @@
 
 
 //Crear funciones para validar los datos introducidos en un formulario
+let ciudad = document.getElementById("campoCiudad");
+const PATRON = /^\s+[0-9]\s+$/;
+const validar = document.getElementById("campoCiudad");
+validar.onblur = validarCiudad;
 
+/*validaciones("campoCiudad", validarCiudad);
 
-function validacionDatos(){
+function validaciones(elemento, fx){
+    const validar = document.getElementById(elemento);
+    validar.onblur = fx;
+}*/
 
-
-    validarCiudad();
-    validarTelefono();
-}
-
-function validarCiudad(){
-    let ciudad = document.getElementById("campoCiudad");
-    const PATRON = /^\s+[0-9]\s+$/;
+function validarCiudad(evento){
 
     if (ciudad.value!=="" || !PATRON.test(ciudad.value)){
         document.getElementById("campoCiudad").className = "bien";
