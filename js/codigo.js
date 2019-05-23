@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+var textNombre = document.getElementById("campoNombre");
+textNombre.onblur = validarNombre;
+function validarNombre() {
+  if (textNombre.length === 0 || /^[0-9]+$/i.test(textNombre.value)) {
+    document.getElementById("campoNombre").className="mal";
+  } else {
+    document.getElementById("campoNombre").className="bien";
+  }
+}
+//Crear funciones para validar los datos introducidos en un formulario
+function validacionDatos() {
+>>>>>>> 979294fc184c78797a65a00b7e65d4ae3efcf18f
 
 
 
