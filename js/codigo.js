@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 var textNombre = document.getElementById("campoNombre");
 textNombre.onblur = validarNombre;
 function validarNombre() {
@@ -10,35 +8,6 @@ function validarNombre() {
   }
 }
 //Crear funciones para validar los datos introducidos en un formulario
-function validacionDatos() {
->>>>>>> 979294fc184c78797a65a00b7e65d4ae3efcf18f
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 let txtEdad = document.getElementById("campoEdad");
