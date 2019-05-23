@@ -1,10 +1,9 @@
-//Crear funciones para validar los datos introducidos en un formulario
-
-// Función para validar que la edad introducida no este en blanco y sean números
-var txtEdad = document.getElementById("campoEdad")
-function validarEdad() {
-    if (txtEdad == null || txtEdad.length == 0 || isNaN(txtEdad)) {
-        alert('ERROR: Debes introducir una edad');
-        return false;
-    }
+var textNombre = document.getElementById("campoNombre");
+textNombre.onblur = validarNombre;
+function validarNombre() {
+  if (textNombre.length === 0 || /^[0-9]+$/i.test(textNombre.value)) {
+    document.getElementById("campoNombre").className="mal";
+  } else {
+    document.getElementById("campoNombre").className="bien";
+  }
 }
